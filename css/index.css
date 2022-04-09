@@ -1,0 +1,113 @@
+@keyframes buttonMove
+{
+    0% {
+        background-color: #4c97ff59;
+        filter: blur(1.5px);
+    }
+    100% {
+        background-color: #4c97ff;
+        filter: blur(0px);
+    }
+}
+
+@keyframes buttonPress
+{
+    0% {
+        background-color: #4c97ff;
+    }
+    100% {
+        background-color: #3a74c5;
+    }
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button{
+    background-color: #4c97ff59;
+    height: 30px;
+    border: 2px groove #ffffff;
+    color: #ffffff;
+    border-radius: 5px;
+    filter: blur(1.5px);
+}
+button:hover{
+    animation: buttonMove 1s;
+    background-color: #4c97ff;
+    filter: blur(0px);
+}
+button:active{
+    animation: buttonPress 0.5s;
+    background-color: #3a74c5;
+}
+
+.top{
+    position: fixed;
+    width: 98%;
+    height: 50px;
+    top: 1%;
+    left: 1%;
+}
+
+.top-shadow{
+    position: fixed;
+    width: 98%;
+    height: 50px;
+    top: 1%;
+    left: 1%;
+    background-color: #ffffffa1;
+    filter: blur(3px);
+    border-radius: 10px;
+}
+
+.background-img{
+    background: url(../img/Fr5Ri464JOjH8180Z029lrRHivfm.jpg) no-repeat;
+    background-size: cover;
+    width: 110%;
+    height: 110%;
+    position: fixed;
+    top: -5%;
+    left: -5%;
+    filter: blur(5px);
+}
+
+.blur{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    filter: blur(5px);
+    background-color: #00000060;
+}
+
+.bg{
+    width: 100%;
+    height: 1000px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.head-por{
+    height: 60%;
+    position: relative;
+    left: 50px;
+    top: 20%;
+    border-radius: 50%;
+}
+
+.main-text{
+    position: absolute;
+    top: 70px;
+    left: 10%;
+    width: 80%;
+}
+
+.main-text-bg{
+    background-color: #00000075;
+    color: #FFFFFF;
+    width: 100%;
+    padding: 20px;
+}
