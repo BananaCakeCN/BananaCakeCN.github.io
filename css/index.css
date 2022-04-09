@@ -24,6 +24,9 @@ p{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+a{
+    text-decoration-line: none;
+}
 button{
     background-color: #4c97ff59;
     height: 30px;
