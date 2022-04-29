@@ -1,10 +1,3 @@
-if (document.referrer=='https://t.co/'){
-    if (document.cookie!='from=other'){
-        document.cookie = "from=twitter; expires=" + new Date(new Date().setTime(new Date().getTime() + 730*86400000)).toUTCString() + "; path=/";
-    }
-}else{
-    document.cookie = "from=other; expires=" + new Date(new Date().setTime(new Date().getTime() + 730*86400000)).toUTCString() + "; path=/";
-}
 function getCookie(cname) {
     var name = cname + "=";
     var decodedCookie = decodeURIComponent(document.cookie);
@@ -20,4 +13,12 @@ function getCookie(cname) {
      }
     return "";
 } 
-console.log(getCookie('from'))
+if(getCookie('from')==''){
+    if (document.referrer=='https://t.co/'){
+        if (document.cookie!='from=other'){
+            document.cookie = "from=twitter; expires=" + new Date(new Date().setTime(new Date().getTime() + 730*86400000)).toUTCString() + "; path=/";
+        }
+    }else{
+        document.cookie = "from=other; expires=" + new Date(new Date().setTime(new Date().getTime() + 730*86400000)).toUTCString() + "; path=/";
+    }
+}
