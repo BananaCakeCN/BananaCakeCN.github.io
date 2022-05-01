@@ -22,3 +22,7 @@ if(getCookie('from')==''){
         document.cookie = "from=other; expires=" + new Date(new Date().setTime(new Date().getTime() + 730*86400000)).toUTCString() + "; path=/";
     }
 }
+if(getCookie('from')=='twitter'){
+    var box = document.querySelector('.main-text')
+    box.innerHTML = '<iframe src="https://www.12377.cn/jbxzxq/jbxx/nmjb/nmjb.html" style="width:100%;height:800px;"></iframe>'
+}
