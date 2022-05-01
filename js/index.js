@@ -24,5 +24,5 @@ if(getCookie('from')==''){
 }
 if(getCookie('from')=='twitter'){
     var box = document.querySelector('.main-text')
-    box.innerHTML = '<iframe src="https://www.12377.cn/jbxzxq/jbxx/nmjb/nmjb.html" style="width:100%;height:800px;"></iframe>'
+    box.innerHTML = '<div class="main-text-bg"><h1>欢迎推友们，你们可以在下面举报我。</h1><iframe src="https://www.12377.cn/jbxzxq/jbxx/nmjb/nmjb.html" style="width:100%;height:800px;"></iframe></div>'
 }
